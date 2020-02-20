@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+/* ###### GLOBAL STYLES  ###### */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(245, 241, 241);
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: rgb(82, 80, 80);
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.heading-dash {
+  height: 2px;
+  width: 100px;
+  display: inline-block;
+  background: -webkit-linear-gradient(left, #b0a221, #7ced6d);
+  background: -webkit-gradient(left, #b0a221, #7ced6d);
+  background: -moz-linear-gradient(left, #b0a221, #7ced6d);
+}
+
+/* ---- END ----- */
+
+/* FOR IPHONE 5 SCREENS (dk why people use such phones) */
+@media only screen and (max-width: 320px) {
+  .header-contact {
+    font-size: 10px !important;
+  }
+
+  .footer-attribution {
+    font-size: 12px !important;
+  }
+}
+
+/* ---- END ----- */
+
+/* -------- TEST -------- */
+
+
+.intro button {
+  border: none;
+  background: #333;
+  color: white;
+  padding: 12px 35px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.intro {
+  background-color: silver;
+  background-image: url(/images/coffee.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: left;
+  height: 550px;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 87%, 0 0);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 87%, 0 0);
+
+}
+
+.intro-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  padding-top: 100px;
+
+}
+
+.intro-wrap h5 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: white;
+
+}
+
+.intro-wrap h2 {
+  font-size: 30px;
+  color: white;
+
+}
+
+@media only screen and (min-width: 760px) {
+  .intro-wrap h5 {
+    font-weight: bold;
+  }
+
+  .intro-wrap h2 {
+    font-weight: bold;
+  }
+
+  .intro-wrap {
+    padding-top: 130px;
+
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 1020px) {
+  .intro {
+
+    height: 600px;
+
+  }
+
+  .intro-wrap {
+
+    width: 80%;
+
+
+  }
+
+  .intro-wrap h5 {
+
+    font-size: 22px;
+
+  }
+
+  .intro-wrap h2 {
+    font-size: 40px;
+
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .intro {
+
+    height: 650px;
+
+  }
+
+  .intro-wrap {
+
+    width: 60%;
+
+
+  }
+
+
+
+  .intro-wrap h2 {
+    font-size: 40px;
+
+  }
+}
