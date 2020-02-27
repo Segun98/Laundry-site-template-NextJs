@@ -1,7 +1,7 @@
-const sgMail = require('@sendgrid/mail')
+//const sgMail = require('@sendgrid/mail')
 
-export default async function(req, res) {
-  sgMail.set-Api--Key('')
+//export default async function(req, res) {
+ // sgMail.set-Api--Key('')
 
   const { email, text } = req.body
 
